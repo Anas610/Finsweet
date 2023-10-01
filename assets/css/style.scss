@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+$main-clr: #1c1e53;
+$secondry-clr: #2405f2;
+$text-clr: #282938;
+$p-clr: #656773;
+$white-clr: #ffffff;
+$bg-clr: #f4f6fc;
+$btn-clr: #fcd980;
+
+@mixin btn($clr, $bgclr, $borclr, $x) {
+    border-radius: 2.5625rem;
+    color: $clr;
+    background-color: $bgclr;
+    padding: 1rem $x;
+    border: .0625rem solid $borclr;
+}
+
+
+
+h1 {
+    font-weight: 600;
+    font-size: 3.375rem;
+    line-height: 4.625rem;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 2.375rem;
+    line-height: 3.5rem;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+h5 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+h6 {
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 2rem;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    opacity: .6;
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+ul {
+    list-style: none;
+}
+
+.contain {
+    padding: 8rem 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+
+    nav {
+        background-color: $main-clr;
+        color: $white-clr;
+
+        .nav__links {
+            a {
+                color: $white-clr;
+            }
+        }
+
+        .nav__btn {
+            a {
+                @include btn($white-clr, $main-clr, $p-clr, 3rem)
+            }
+        }
+    }
+
+    header {
+        color: $white-clr;
+        background-color: $main-clr;
+
+        .header__content {
+            .pricing {
+                color: $white-clr;
+            }
+
+            .header__btn {
+                @include btn(#000, $btn-clr, transparent, 3.5rem)
+            }
+        }
+    }
+
+
+    .planning {
+        background-color: $bg-clr;
+
+        &__content {
+            a {
+                color: $secondry-clr;
+            }
+        }
+    }
+
+    .projects {
+        .overlay__text {
+            color: $white-clr;
+
+            a {
+                color: $btn-clr;
+            }
+        }
+    }
+
+    .products {
+        background-color: $bg-clr;
+
+        &__header {
+            text-align: center;
+        }
+
+        .box {
+            background-color: $white-clr;
+        }
+    }
+
+    .feedback {
+        background-color: #F9FBFD;
+    }
+
+    .questions {
+        a {
+            color: $secondry-clr;
+        }
+
+        .num {
+            color: $secondry-clr;
+        }
+
+        .box:not(:last-child) {
+            border-bottom: .1875rem solid $bg-clr;
+        }
+
+        .layout {
+            color: $white-clr;
+
+            p {
+                opacity: .9;
+            }
+
+            .startups {
+                // background: rgba(28, 30, 83, 0.5);
+                background-image: url('../imgs/woman-writing-on-paper-3228878.png');
+                background-size: cover;
+
+                .pos {
+                    background: rgba(28, 30, 83, 0.5);
+                }
+            }
+
+            .inquiry {
+                background-image: url("../imgs/Background.png");
+                background-size: cover;
+
+                input:not(:last-of-type) {
+                    padding: .7rem 2rem;
+                    opacity: .6;
+                    border: .0625rem solid $p-clr;
+                    color: #ffffff;
+                    width: 75%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    border-radius: .3125rem;
+                    background-color: $main-clr
+                }
+
+                [type="button"] {
+                    @include btn(#000, $btn-clr, transparent, 3.125rem);
+                    font-weight: 500;
+                    width: 75%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                .link {
+                    margin: auto;
+                }
+
+                img {
+                    padding-top: .3125rem;
+                }
+            }
+        }
+    }
+
+    .blog {
+        .articles {
+            span {
+                color: $p-clr;
+            }
+        }
+    }
+
+    .contacts {
+        background-color: $main-clr;
+        color: $white-clr;
+
+        .container {
+            padding-top: 6rem;
+        }
+
+        .connect {
+            background-color: $btn-clr;
+            color: #000;
+            margin-top: 80px;
+        }
+
+        p {
+            opacity: .9;
+        }
+    }
+}

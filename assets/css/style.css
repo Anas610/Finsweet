@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 3.375rem;
+  line-height: 4.625rem;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 2.375rem;
+  line-height: 3.5rem;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+h5 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h6 {
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 2rem;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  opacity: 0.6;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
+}
+
+.contain {
+  padding: 8rem 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+body nav {
+  padding-top: 1rem;
+  background-color: #1c1e53;
+  color: #ffffff;
+}
+body nav .nav__links a {
+  color: #ffffff;
+}
+body nav .nav__btn a {
+  border-radius: 2.5625rem;
+  color: #ffffff;
+  background-color: #1c1e53;
+  padding: 1rem 3rem;
+  border: 0.0625rem solid #656773;
+}
+body header {
+  color: #ffffff;
+  background-color: #1c1e53;
+}
+body header .header__content .pricing {
+  color: #ffffff;
+}
+body header .header__content .header__btn {
+  border-radius: 2.5625rem;
+  color: #000;
+  background-color: #fcd980;
+  padding: 1rem 3.5rem;
+  border: 0.0625rem solid transparent;
+}
+body .planning {
+  background-color: #f4f6fc;
+}
+body .planning__content a {
+  color: #2405f2;
+}
+body .projects .overlay__text {
+  color: #ffffff;
+}
+body .projects .overlay__text a {
+  color: #fcd980;
+}
+body .products {
+  background-color: #f4f6fc;
+}
+body .products__header {
+  text-align: center;
+}
+body .products .box {
+  background-color: #ffffff;
+}
+body .feedback {
+  background-color: #F9FBFD;
+}
+body .questions a {
+  color: #2405f2;
+}
+body .questions .num {
+  color: #2405f2;
+}
+body .questions .box:not(:last-child) {
+  border-bottom: 0.1875rem solid #f4f6fc;
+}
+body .questions .layout {
+  color: #ffffff;
+}
+body .questions .layout p {
+  opacity: 0.9;
+}
+body .questions .layout .startups {
+  background-image: url("../imgs/woman-writing-on-paper-3228878.png");
+  background-size: cover;
+}
+body .questions .layout .startups .pos {
+  background: rgba(28, 30, 83, 0.5);
+}
+body .questions .layout .inquiry {
+  background-image: url("../imgs/Background.png");
+  background-size: cover;
+}
+body .questions .layout .inquiry input:not(:last-of-type) {
+  padding: 0.7rem 2rem;
+  opacity: 0.6;
+  border: 0.0625rem solid #656773;
+  color: #ffffff;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.3125rem;
+  background-color: #1c1e53;
+}
+body .questions .layout .inquiry [type=button] {
+  border-radius: 2.5625rem;
+  color: #000;
+  background-color: #fcd980;
+  padding: 1rem 3.125rem;
+  border: 0.0625rem solid transparent;
+  font-weight: 500;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+body .questions .layout .inquiry .link {
+  margin: auto;
+}
+body .questions .layout .inquiry img {
+  padding-top: 0.3125rem;
+}
+body .blog .articles span {
+  color: #656773;
+}
+body .contacts {
+  background-color: #1c1e53;
+  color: #ffffff;
+}
+body .contacts .container {
+  padding-top: 6rem;
+}
+body .contacts .connect {
+  background-color: #fcd980;
+  color: #000;
+  margin-top: 80px;
+}
+body .contacts p {
+  opacity: 0.9;
+}/*# sourceMappingURL=style.css.map */
